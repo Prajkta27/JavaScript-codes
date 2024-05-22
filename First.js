@@ -98,3 +98,10 @@ let r=3;
 let s="3";
 console.log("r==s", r==s);     //true
 console.log("r===s", r===s);   //false
+
+let c=3;
+let d=5;
+console.log("c>d=", c>d);     //false
+console.log("c<d=", c<d);     //true
+console.log("c>=d=", c>=d);   //false
+console.log("c<=d=", c<=d);   //true
