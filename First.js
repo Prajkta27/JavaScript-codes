@@ -105,3 +105,18 @@ console.log("c>d=", c>d);     //false
 console.log("c<d=", c<d);     //true
 console.log("c>=d=", c>=d);   //false
 console.log("c<=d=", c<=d);   //true
+
+//Logical operators
+//Logical AND(&&)
+let cond1 = c<d;     //true
+let cond2 = c===3;   //true
+console.log("cond1 && cond2=", cond1 && cond2);    //true
+
+//Logical OR(||)
+let cond3 = c>d;     //false
+let cond4 = c===3;   //true
+console.log("cond3 || cond4=", cond3 || cond4);    //true
+
+//Logical NOT(!)
+console.log("!(c>d)=", !(c>d));      //true   
+//returns true if the answer is false, we know c is not greater than d, still it returns true
