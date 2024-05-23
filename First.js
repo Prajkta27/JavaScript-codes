@@ -194,3 +194,11 @@ for(let count=1; count<=5; count++)
     {
         console.log("This is first loop till now");
     }
+
+//calculate sum of 1 to n numbers
+    let n=prompt("Enter a number:");
+    let sum;
+    for(let i=1; i<=n; i++){
+            sum=sum+i;
+    }
+    console.log("sum of the numbers is:", sum);
