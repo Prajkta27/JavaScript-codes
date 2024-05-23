@@ -187,3 +187,10 @@ if(score>=90 && score<=100)
         grade="F"
     }
     console.log("According to your scores, your grade is:", grade);
+
+//Loops in JS
+//For loop
+for(let count=1; count<=5; count++)
+    {
+        console.log("This is first loop till now");
+    }
