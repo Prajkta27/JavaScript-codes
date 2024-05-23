@@ -15,10 +15,10 @@
     const b=25;
     console.log(b);
 }
-//For objrct creation use following sysntax
+//For objrct creation use following syntax
 //object is declared using key value pair
 //it is declared using let/const same as variable
-//we can change the key assigned wihin the object even if it's const. Ex: we can change name from Student object
+//we can change the key assigned within the object even if it's const. Ex: we can change name from Student object
 
 const Student=
 {
@@ -120,3 +120,27 @@ console.log("cond3 || cond4=", cond3 || cond4);    //true
 //Logical NOT(!)
 console.log("!(c>d)=", !(c>d));      //true   
 //returns true if the answer is false, we know c is not greater than d, still it returns true
+
+//conditional statements
+//if else
+let no=5;
+if(no%2==0)
+    {
+        console.log(no + "is even");
+    }
+else{
+    console.log(no + "is odd");
+}
+
+//if else if else
+let mode="dark";
+let colour;
+if(mode=="dark"){
+        colour=="black";
+}else if(mode=="blue"){
+    colour=="blue";
+}else if(mode=="pink"){
+    colour=="pink";
+}else{
+    colour=="white";
+}
