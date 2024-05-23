@@ -144,3 +144,4 @@ if(mode=="dark"){
 }else{
     colour=="white";
 }
+console.log(colour);
