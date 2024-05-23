@@ -145,3 +145,10 @@ if(mode=="dark"){
     colour=="white";
 }
 console.log(colour);
+
+//Ternary operator
+//a?b:c;
+//In this case, a is condition, b will execute if condition is true else c will execute
+let age=25;
+let result= age >= 18 ? "adult": "not adult";
+console.log(result);                  //adult
