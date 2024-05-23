@@ -168,7 +168,7 @@ else
 
 //Write a code which can give grades to students according to their scores
 //90-100, A      70-89, B       60-69, C        50-59, D        0-49, F
-let score= prompt("Enter a score");
+let score= prompt("Enter a score(0-100):");
 let grade;
 
 if(score>=90 && score<=100)
