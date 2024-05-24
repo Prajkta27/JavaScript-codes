@@ -249,7 +249,7 @@ for(let count=1; count<=5; count++)
         }
     console.log("Size of string is:", length);      //7
 
-    //for in loop
+//for in loop
     //returns key of the object
     //syntax:
          /* for(let key in object name)
@@ -269,8 +269,8 @@ for(let count=1; count<=5; count++)
             console.log(key);                // returns keys if Employee i.e. name, age, salary, isID
         }
 
-    //practice questions
-    //print all the even numbers between 1 to 100
+//practice questions
+//print all the even numbers between 1 to 100
     for(let num=0; num<=100; num++)
         {
             if(num%2===0)
@@ -304,16 +304,16 @@ for(let count=1; count<=5; count++)
     console.log(output);
 
 //String methods in JS
-    //str.toUpperCase()
+//str.toUpperCase()
     let str1="Hello";
     let newStr= str1.toUpperCase();       //Original string won't be changed, hence created the new string for change
     console.log(newStr);      //HELLO
 
-    //str.toLowerCase()
+//str.toLowerCase()
     let newStr2= str1.toLowerCase();       //Original string won't be changed, hence created the new string for change
     console.log(newStr2);     //hello
 
-    //str.trim()    .... removes whitespaces from the strat and end of the string, not from the middle
+//str.trim()    .... removes whitespaces from the strat and end of the string, not from the middle
     let str2="    abc";
     let str3="pqr    ";
     let str4="x    yz";
@@ -321,12 +321,12 @@ for(let count=1; count<=5; count++)
     console.log(str3.trim());        //pqr
     console.log(str4.trim());        //x     yz
 
-    //str.slice(start, end?)        //returns part of the string      //won't be including last index
+//str.slice(start, end?)        //returns part of the string      //won't be including last index
     let str5= "abcdefg";
     console.log(str5.slice(1,4));       //bcd
     console.log(str5.slice(2,6));       //cdef
 
-    //str.concat(str2)             //cocatenates(adds) 2 strings
+//str.concat(str2)             //cocatenates(adds) 2 strings
     let str6="My";
     let str7="house";
     let concat= str6.concat(str7);       
@@ -337,9 +337,16 @@ for(let count=1; count<=5; count++)
     concat=str6 + str7;         
     console.log(concat);           //Myhouse
 
-    //str.replace(searchVal, newVal)
+//str.replace(searchVal, newVal)
     console.log(str6.replace("y","e"));          //Me
 
-    //str.charAt(index)
+//str.charAt(index)
     console.log(str7.charAt(1));                //o
     console.log(str7.charAt(4));                //e
+
+//Practice questions related to string
+/*Prompt the user to enter their fullname. Generate a username for them based on the input. Start username with @,
+followed by their fullname and ending with the fullname length*/
+  let fullname= prompt("Enter your fullname(without space)");               //prajktagudle
+  let username= "@" + fullname.concat(fullname.length);
+  console.log(username);                                                    //@prajktagudle12
