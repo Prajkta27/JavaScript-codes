@@ -359,3 +359,46 @@ followed by their fullname and ending with the fullname length*/
      console.log(cricketers[1]);                                   //Virat
      console.log(cricketers[1]="Faf");        
      console.log(cricketers);                                      ////[ 'Dhoni', 'Faf', 'Rohit', 'Jadeja', 'Raina' ]
+
+//Looping over an array
+     for(let i=0;i<cricketers.length;i++)
+        {
+            console.log(cricketers[i]);
+        }
+    /*output: Dhoni
+               Virat
+               Rohit
+               Jadeja
+               Raina */
+    //Also the same can be achieved through for of loop
+    for(let cricketer of cricketers)
+        {
+            console.log(cricketer);
+        }
+
+//To convert the array elements in uppercase    
+    for(let cricketer of cricketers)
+            {
+                console.log(cricketer.toUpperCase());
+            }
+
+//Practice question related to arrays
+//For a given array with marks of students -> [80, 60, 55, 70, 33, 91]. Find the average marks of entire class.
+    let Marks= [80, 60, 55, 70, 33, 91];
+    let total_marks=0
+    for(let i=0;i<Marks.length;i++)
+        {
+            total_marks= total_marks + Marks[i];
+        }
+    let avg_marks=total_marks / Marks.length;
+    console.log("Average marks of the class are:", avg_marks);              //64.83333333333333
+
+/*For a given array with prices of 5 items -> [250, 300, 780, 576, 200]. All items have an offer of 10% OFF on them.
+ change the array to store final price after applying offer*/
+    let items= [250, 300, 780, 576, 200];
+    for(let i=0;i<items.length;i++)
+        {
+            let offer=items[i]/10;
+            items[i]=items[i]-offer;
+        }
+    console.log(items);                                       //[ 225, 270, 702, 518.4, 180 ]
