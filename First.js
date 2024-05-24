@@ -302,3 +302,44 @@ for(let count=1; count<=5; count++)
     //print using template literals
     let output=`Cost of ${pen.name} is ${pen.price} rupees`;
     console.log(output);
+
+//String methods in JS
+    //str.toUpperCase()
+    let str1="Hello";
+    let newStr= str1.toUpperCase();       //Original string won't be changed, hence created the new string for change
+    console.log(newStr);      //HELLO
+
+    //str.toLowerCase()
+    let newStr2= str1.toLowerCase();       //Original string won't be changed, hence created the new string for change
+    console.log(newStr2);     //hello
+
+    //str.trim()    .... removes whitespaces from the strat and end of the string, not from the middle
+    let str2="    abc";
+    let str3="pqr    ";
+    let str4="x    yz";
+    console.log(str2.trim());        //abc
+    console.log(str3.trim());        //pqr
+    console.log(str4.trim());        //x     yz
+
+    //str.slice(start, end?)        //returns part of the string      //won't be including last index
+    let str5= "abcdefg";
+    console.log(str5.slice(1,4));       //bcd
+    console.log(str5.slice(2,6));       //cdef
+
+    //str.concat(str2)             //cocatenates(adds) 2 strings
+    let str6="My";
+    let str7="house";
+    let concat= str6.concat(str7);       
+    console.log(concat);           //Myhouse
+    concat= str7.concat(str6);
+    console.log(concat);           //houseMy
+    //Also in JS, we can concatenate string using +
+    concat=str6 + str7;         
+    console.log(concat);           //Myhouse
+
+    //str.replace(searchVal, newVal)
+    console.log(str6.replace("y","e"));          //Me
+
+    //str.charAt(index)
+    console.log(str7.charAt(1));                //o
+    console.log(str7.charAt(4));                //e
