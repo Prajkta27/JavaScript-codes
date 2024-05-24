@@ -288,3 +288,17 @@ for(let count=1; count<=5; count++)
             userNum= prompt("Sorry, you guessed wrong number, please try again!");
         }
     console.log("Congratulations, you guessed the right number!");
+
+ //Template literals
+    //Template literals are nothing but the strings with back ticks(``)
+    let pen={
+        name:"ball pen",
+        price:10
+    };
+
+    //print by normal method (using string)
+    console.log("Cost of", pen.name, "is", pen.price, "rupees");
+
+    //print using template literals
+    let output=`Cost of ${pen.name} is ${pen.price} rupees`;
+    console.log(output);
