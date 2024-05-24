@@ -268,3 +268,23 @@ for(let count=1; count<=5; count++)
         {
             console.log(key);                // returns keys if Employee i.e. name, age, salary, isID
         }
+
+    //practice questions
+    //print all the even numbers between 1 to 100
+    for(let num=0; num<=100; num++)
+        {
+            if(num%2===0)
+                {
+                    console.log("Even numbers are:", num);
+                }
+        }
+
+    /*Create a game where you start with a random game number.
+    Ask the user to keep guessing the game number until the user enters the right value*/
+    let gameNum=36;
+    let userNum= prompt("Guess the number");
+    while(userNum!=gameNum)
+        {
+            userNum= prompt("Sorry, you guessed wrong number, please try again!");
+        }
+    console.log("Congratulations, you guessed the right number!");
