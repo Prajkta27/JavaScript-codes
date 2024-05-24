@@ -350,3 +350,12 @@ followed by their fullname and ending with the fullname length*/
   let fullname= prompt("Enter your fullname(without space)");               //prajktagudle
   let username= "@" + fullname.concat(fullname.length);
   console.log(username);                                                    //@prajktagudle12
+
+//Arrays in JS
+     let cricketers= ["Dhoni", "Virat", "Rohit", "Jadeja", "Raina"];
+     console.log(cricketers);                                      //[ 'Dhoni', 'Virat', 'Rohit', 'Jadeja', 'Raina' ]
+     console.log(cricketers.length);                               //5
+     console.log(typeof(cricketers));                              //'object'     Note:not array
+     console.log(cricketers[1]);                                   //Virat
+     console.log(cricketers[1]="Faf");        
+     console.log(cricketers);                                      ////[ 'Dhoni', 'Faf', 'Rohit', 'Jadeja', 'Raina' ]
