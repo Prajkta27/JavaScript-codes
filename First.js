@@ -202,3 +202,69 @@ for(let count=1; count<=5; count++)
             sum=sum+i;
     }
     console.log("sum of the numbers is:", sum);
+
+//While loop
+    // syntax:
+          /*while(condition)
+            {
+                do some work (i.e. print something)
+                updation
+            }*/
+    let i=1;
+    while(i<=5)
+        {
+            console.log("This is while loop");
+            i++;
+        }
+
+    //do while
+    //syntax:
+          /* do{
+            do some work(print something)
+            updation
+          } while (condition); */
+    /*so from the sysntax, we came to know that in do while, condition is going to check at last,
+    so it's sure that at lease 1 time our statement is going to execute*/
+
+    let count=1;
+    do{
+        console.log("This is do while loop");
+        count++;
+    }while(count<=5);
+
+    //for of loop
+    //used to ierate the characters ofr elements of string and arrays respecively
+    //syntax:
+        /* for(let val of str)
+            {
+                do some work;
+            }*/
+
+    let str= "Prajkta";
+    let length=0;
+    for(let val of str)
+        {
+            console.log("val=", val);                //print each char of string
+            length++;
+        }
+    console.log("Size of string is:", length);      //7
+
+    //for in loop
+    //returns key of the object
+    //syntax:
+         /* for(let key in object name)
+            {
+                do some work;
+            }*/
+
+    let Employee = {
+        name:"Tushar Gawande",
+        age: 24,
+        salary: 400000,
+        isID: true
+    };
+
+    for(let key in Employee)
+        {
+            console.log(key);                // returns keys if Employee i.e. name, age, salary, isID
+        }
