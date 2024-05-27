@@ -403,18 +403,18 @@ followed by their fullname and ending with the fullname length*/
         }
     console.log(items);                                       //[ 225, 270, 702, 518.4, 180 ]
 
-    //Array Methods
-    //Push()       ...Add elements to the end of the array by chsging the original array
+//Array Methods
+//Push()       ...Add elements to the end of the array by chsging the original array
     let foodItems=["apple", "mango_juice", "chips", "potato"];
     console.log(foodItems.push("tomato"));                    //5
     console.log(foodItems);                                   [ 'apple', 'mango_juice', 'chips', 'potato', 'tomato' ]
 
-    //pop()        ...Removes elements from the end of array & return it by changing the original array
+//pop()        ...Removes elements from the end of array & return it by changing the original array
     let foodItems1=["apple", "mango_juice", "chips", "potato","tomato"];
     console.log(foodItems1.pop());                    //tomato
     console.log(foodItems1);                          //[ 'apple', 'mango_juice', 'chips', 'potato' ]
 
-    //toString()    ...Convert an array to a string  (Doesn't change original array, instead returns a new string)
+//toString()    ...Convert an array to a string  (Doesn't change original array, instead returns a new string)
     console.log(foodItems1.toString());              //apple,mango_juice,chips,potato,tomato
     console.log(foodItems1);                         //[ 'apple', 'mango_juice', 'chips', 'potato', 'tomato' ]
 
@@ -428,10 +428,33 @@ followed by their fullname and ending with the fullname length*/
     console.log(csk_players);                        //[ 'Dhoni', 'Jadeja', 'Raina', 'Shardul' ]
     console.log(mi_players);                         //[ 'Rohit', 'Surya', 'Hardik' ]
 
-    //unshift()    ...same ar push(), but difference is it adds elements to the start of array
+//unshift()    ...same ar push(), but difference is it adds elements to the start of array
     console.log(mi_players.unshift("Ishan"));
     console.log(mi_players);                         //[ 'Ishan', 'Rohit', 'Surya', 'Hardik' ]
 
-    //shift()      ...same as pop(), onlyy difference is removes elements from start of array
+//shift()      ...same as pop(), onlyy difference is removes elements from start of array
     console.log(mi_players.shift());                //Rohit
     console.log(mi_players);                        //[ 'Surya', 'Hardik' ]
+
+//slice(startIndex, endIndex)       ...returns piece of array (Doesn't change original array)
+    console.log(csk_players.slice(0,2));            //[ 'Dhoni', 'Jadeja' ]
+    console.log(csk_players);                       //[ 'Dhoni', 'Jadeja', 'Raina', 'Shardul' ]
+
+//splice(startIndex, deleteCount, newElement)       ...change original array(add, remove, replace)
+    let arr=[1,2,3,4,5,6,7];
+    console.log(arr.splice(2,2,10,12));             //[ 3, 4 ]
+    console.log(arr);                               //[1, 2, 10, 12, 5, 6,  7]
+   //we can also add elements using splice()
+   console.log(arr.splice(2,0,105));
+   console.log(arr);                                //[ 1, 2, 105, 3, 4, 5,   6, 7]
+   //to delete element
+   console.log(arr.splice(1,1));                   //[ 2 ]
+   console.log(arr);                               //[ 1, 3, 4, 5, 6, 7 ]
+   //to replace element
+   console.log(arr.splice(1,1,200));               //[ 2 ]
+   console.log(arr);                               //[1, 200, 3, 4, 5,   6, 7]
+   /*if we only pass startIdx in slice(), it will work as slice() and will delete all the elemnts in the array 
+   after that index and return the array*/
+   //lets consider our arr=[1,2,3,4,5,6,7];
+   console.log(arr.splice(4));                     //[ 5, 6, 7 ]
+   console.log(arr);                               //[ 1, 2, 3, 4 ]
