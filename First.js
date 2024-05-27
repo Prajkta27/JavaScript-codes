@@ -458,3 +458,16 @@ followed by their fullname and ending with the fullname length*/
    //lets consider our arr=[1,2,3,4,5,6,7];
    console.log(arr.splice(4));                     //[ 5, 6, 7 ]
    console.log(arr);                               //[ 1, 2, 3, 4 ]
+
+//Practice question
+//Create an array to strore companies -> "Bloomberg", "Microsoft", "Uber", "Google","ibm"
+   //a.Remove the first company from the array
+   //b.Remove Uber & add Ola in it's place
+   //c.Add Amazon at the end
+   let companies=["Bloomberg", "Microsoft", "Uber", "Google","ibm"];
+   console.log(companies.shift());                //Bloomberg
+   //console.log(companies);                      //[ 'Microsoft', 'Uber', 'Google', 'ibm' ]
+   console.log(companies.splice(2,1,"Ola"));      //[ 'Uber' ]
+   //console.log(companies);                      //[ 'Bloomberg', 'Microsoft', 'Ola', 'Google', 'ibm' ]
+   console.log(companies.push("Amazon"));         //6
+   //console.log(companies)                       //[ 'Bloomberg', 'Microsoft', 'Uber', 'Google', 'ibm', 'Amazon' ]
