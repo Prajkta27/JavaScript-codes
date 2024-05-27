@@ -513,3 +513,39 @@ followed by their fullname and ending with the fullname length*/
         console.log(a*b);
      }
      arrowMul(10,20);               //200
+
+     const printHello = () => console.log("Hello");
+     printHello();                 //Hello
+
+//Practice question:
+//Create a function using "Function" keyword that takes astring as an argument returns the number of vowels in the string
+    
+     function countVowels(str)
+     {
+        let vCount=0;
+        for(let i=0;i<str.length;i++)
+            {
+                if(str[i]==="a" || str[i]==="e" || str[i]==="i" || str[i]==="o" || str[i]==="u")
+                    {
+                        //console.log(str[i]);
+                        vCount++;
+                    }
+            }
+            console.log(vCount);
+     }
+     countVowels("hello");                   //2
+
+//create the same function using arrow
+     const countVow = (str) => {
+        let count=0;
+        for(let i=0;i<str.length;i++)
+        { 
+            if(str[i]==="a" || str[i]==="e" || str[i]==="i" || str[i]==="o" || str[i]==="u")
+                 {
+                    //console.log(str[i]);
+                    count++;
+                 }
+        }
+        console.log(count);
+    }
+    countVowels("hello"); 
