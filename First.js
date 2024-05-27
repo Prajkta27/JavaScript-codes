@@ -549,3 +549,13 @@ followed by their fullname and ending with the fullname length*/
         console.log(count);
     }
     countVowels("hello"); 
+
+//Practice question:
+//For a given array of numbers, print the square of esch value using the forEach loop
+    let arrSq=[2,3,4,5,6];
+    let square=0;
+    arrSq.forEach((val) =>
+    {
+        square=val*val;
+        console.log(square);
+    });
