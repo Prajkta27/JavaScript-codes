@@ -402,3 +402,36 @@ followed by their fullname and ending with the fullname length*/
             items[i]=items[i]-offer;
         }
     console.log(items);                                       //[ 225, 270, 702, 518.4, 180 ]
+
+    //Array Methods
+    //Push()       ...Add elements to the end of the array by chsging the original array
+    let foodItems=["apple", "mango_juice", "chips", "potato"];
+    console.log(foodItems.push("tomato"));                    //5
+    console.log(foodItems);                                   [ 'apple', 'mango_juice', 'chips', 'potato', 'tomato' ]
+
+    //pop()        ...Removes elements from the end of array & return it by changing the original array
+    let foodItems1=["apple", "mango_juice", "chips", "potato","tomato"];
+    console.log(foodItems1.pop());                    //tomato
+    console.log(foodItems1);                          //[ 'apple', 'mango_juice', 'chips', 'potato' ]
+
+    //toString()    ...Convert an array to a string  (Doesn't change original array, instead returns a new string)
+    console.log(foodItems1.toString());              //apple,mango_juice,chips,potato,tomato
+    console.log(foodItems1);                         //[ 'apple', 'mango_juice', 'chips', 'potato', 'tomato' ]
+
+     //concat()     ...Join multiple arrays and return  (Don't change original array)
+     let csk_players=["Dhoni", "Jadeja", "Raina","Shardul"];
+     let mi_players=["Rohit","Surya","Hardik"];
+     let ipl_players=csk_players.concat(mi_players);
+     console.log("So by combining, Ipl players are:", ipl_players);   
+    //output: So by combining, Ipl players are: ['Dhoni',  'Jadeja', 'Raina',  'Shardul', 'Rohit',  'Surya', 'Hardik']
+    //As earier mentioned, it doesn't change original array, let's check that
+    console.log(csk_players);                        //[ 'Dhoni', 'Jadeja', 'Raina', 'Shardul' ]
+    console.log(mi_players);                         //[ 'Rohit', 'Surya', 'Hardik' ]
+
+    //unshift()    ...same ar push(), but difference is it adds elements to the start of array
+    console.log(mi_players.unshift("Ishan"));
+    console.log(mi_players);                         //[ 'Ishan', 'Rohit', 'Surya', 'Hardik' ]
+
+    //shift()      ...same as pop(), onlyy difference is removes elements from start of array
+    console.log(mi_players.shift());                //Rohit
+    console.log(mi_players);                        //[ 'Surya', 'Hardik' ]
