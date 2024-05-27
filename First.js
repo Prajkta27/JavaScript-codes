@@ -471,3 +471,45 @@ followed by their fullname and ending with the fullname length*/
    //console.log(companies);                      //[ 'Bloomberg', 'Microsoft', 'Ola', 'Google', 'ibm' ]
    console.log(companies.push("Amazon"));         //6
    //console.log(companies)                       //[ 'Bloomberg', 'Microsoft', 'Uber', 'Google', 'ibm', 'Amazon' ]
+
+//Function      ...block of code that performs specific task and can be invoked whenever required
+//Syntax:
+     /* function functionName()
+     {
+        do some work
+     };
+
+     function functionName(param1, param2,...)
+     {
+        do some work
+     };*/
+
+     //Ex: sum of 2 numbers
+     function sum(a,b)
+     {
+        sum=a+b;
+        console.log(sum);
+     }
+     sum(3,5);                       //7
+
+     //OR
+     function sum(a,b)
+     {
+        console.log(a+b);
+     }
+     sum(3,5);                      //7
+
+    //we can also use the return to return some value
+     function sum(a,b)
+     {
+        sum=a+b;
+        return sum;
+     }
+     let val= sum(50,40);
+     console.log(val);              //90
+
+//Arrow function
+     const arrowMul = (a,b) => {
+        console.log(a*b);
+     }
+     arrowMul(10,20);               //200
