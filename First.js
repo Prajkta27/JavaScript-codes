@@ -597,3 +597,52 @@ followed by their fullname and ending with the fullname length*/
         return res > curr? res: curr;
     });
     console.log(maxOutput);       //19
+
+//Practice Questions:
+// We are given marks of students. Filter out the marks of students that scored 90+.
+    let stuMarks=[77, 99, 83,95,70,91,97];
+    let higherMarks=stuMarks.filter((val) => 
+    {
+        return val>90;
+    });
+    console.log(higherMarks);          //[ 99, 95, 91, 97 ]
+
+/*Take a number n as input from user. Create an array of numbers from 1 to n.
+Use the reduce method to calculate sum of all numbers in the array.
+Use the reduce method to calculate product(factorial) of all the numbers in the array*/
+    
+//simple method
+    let userNo= prompt("Enter a number:");      //2
+    let noArr=[];
+    let sum=0;
+    let mul=1;
+    for(let i=1;i<=userNo;i++)
+        {
+            noArr.push(i);
+            sum = sum + i;
+            mul = mul * i;
+        }
+    console.log(noArr);                  //[ 1, 2 ]
+    console.log(sum);                    //3
+    console.log(mul);                    //2
+
+//Using reduce method
+    let UNo= prompt("Enter a number:");            //2
+    let userArr=[];
+    for(let i=1;i<=userNo;i++)
+        {
+            noArr.push(i);
+            // or userArr[i-1]=i;
+                    
+        }
+        let arrSum= noArr.reduce((res, curr) =>
+           {
+                return res*curr;
+            }) 
+        let factorial= noArr.reduce((res, curr) =>
+           {
+                return res*curr;
+            })  
+    console.log(userArr);                //[ 1, 2 ]
+    console.log(arrSum);                 //3
+    console.log(factorial);                 //2
