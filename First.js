@@ -559,3 +559,41 @@ followed by their fullname and ending with the fullname length*/
         square=val*val;
         console.log(square);
     });
+//some more array methods
+//map(): creates the new array with the result  of some operation. The value its callback returns are used to form new array.
+    //let arr1=[1,2,3,4,5]
+    arr.map((val) =>
+    {
+        console.log(val);        //1, 2, 3, 4, 5
+    });
+
+    //let's create a new array by the callback value of arr1
+    let newArr=arr.map((val) => 
+    {
+        return(val);
+    })
+    console.log(newArr);        //[ 1, 2, 3, 4, 5 ]
+
+//Filter():Creates a new array of elements that give true for a condition/filter
+    let arr2=[23,56,80,47,66];
+    let evenArr=arr2.filter((val) =>
+    {
+        return val%2==0;
+    });
+    console.log(evenArr);      //[ 56, 80, 66 ]
+
+//reduce(): Performs some operations and reduces the array to a single value.
+    let sumArr=[1,2,3,4];
+    const sumOutput= sumArr.reduce((res, curr) =>
+    {
+        return res+curr;
+    });
+    console.log(sumOutput);       //10
+
+    //Find the max
+    let maxArr=[15,19,9,4];
+    const maxOutput= maxArr.reduce((res, curr) =>
+    {
+        return res > curr? res: curr;
+    });
+    console.log(maxOutput);       //19
