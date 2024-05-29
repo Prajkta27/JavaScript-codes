@@ -1,3 +1,8 @@
+//DOM Properties:
+/*innerText
+  innerHTML
+  textContent (similar to ineerText, nut used for hidden text) */
+
 //Practice Questions:
 /* Create a h2 heading element with text "Hello JavaScript". Append "from Apna College students" to this text using Js*/
 
