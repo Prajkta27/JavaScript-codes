@@ -30,3 +30,4 @@ console.log(id.getAttribute("name", "Div"));       //<div id="1" name="Div"></di
 //node.style (used to chnage the style of nodes in JS)
 let div= document.querySelector("id");
 div.style.backgroundColor = "green";
+div.style.fontSize = "26px";
