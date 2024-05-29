@@ -34,3 +34,19 @@ for(let div of divs)
        div.innerText=`New unique value ${idx}`;
        idx++;
     }
+/*Create a new button element. Give it a text "Click me!", background colour of red & text color of white.
+Insert the button as first element of body tag*/
+let newBtn= document.createElement("Button");
+newBtn.innerText("Click me");
+newBtn.style.backgroundColor = "red";
+newBtn.style.color = "white";
+document.querySelector("body").prepend(newBtn);
+
+/*Create a <p> tag in html, give it a class & some styling.
+ Now create a new class in css and try to append this class to the <p> element
+ Did you notice, how we overwrite the class name when you add a new one?
+ Solve this problem using classList */
+let para= document.querySelector("p");
+para.classList.add(".Content2");
+/*...if we use setAttribute to add new class (para.setAttribute(".content",".Content2")),
+ it will override the old class, hence we are using classList to add nbew class*/
