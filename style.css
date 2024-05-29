@@ -1,0 +1,16 @@
+#heading{
+    color: red;
+    background-color: yellow;
+}
+#heading2{
+    color: skyblue;
+}
+body{
+    background-color: pink;
+}
+button{
+    color: blue;
+}
+.MyClass{
+    color: maroon;
+}
