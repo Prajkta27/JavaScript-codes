@@ -31,3 +31,9 @@ console.log(id.getAttribute("name", "Div"));       //<div id="1" name="Div"></di
 let div= document.querySelector("id");
 div.style.backgroundColor = "green";
 div.style.fontSize = "26px";
+
+//Events in JS... The change is the state of an object is known as event
+/* i.e Mouse event: click, double click etc
+       Keyboard event: keypress, keyupp, keydown 
+       form event: submit
+       print event and ,any more */
