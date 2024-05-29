@@ -13,3 +13,20 @@ console.dir(elements);
 
 let allEle=document.querySelectorAll("p");  //when we need all elements
 console.dir(allEle);
+
+//DOM Attributes
+//getAttribute(attr)
+let id=document.querySelector("div");
+console.log(id.getAttribute("id"));         //1
+
+let name=document.querySelector("div");
+console.log(id.getAttribute("name"));       //MyDiv
+
+//setAttribute(attr, val)
+let name2=document.querySelector("div");
+console.log(id.getAttribute("name", "Div"));       //<div id="1" name="Div"></div>
+
+//style
+//node.style (used to chnage the style of nodes in JS)
+let div= document.querySelector("id");
+div.style.backgroundColor = "green";
