@@ -14,3 +14,9 @@
     color:pink;
     background-color: yellow;
 }
+div{
+    height: 100px;
+    width: 50px;
+    border: 1px solid black;
+    background-color: skyblue;
+}
