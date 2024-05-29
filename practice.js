@@ -34,3 +34,14 @@ for(let div of divs)
        div.innerText=`New unique value ${idx}`;
        idx++;
     }
+//DOM Attributes
+//getAttribute(attr)
+let id=document.querySelector("div");
+console.log(id.getAttribute("id"));         //1
+
+let name=document.querySelector("div");
+console.log(id.getAttribute("name"));       //MyDiv
+
+//setAttribute(attr, val)
+let name2=document.querySelector("div");
+console.log(id.getAttribute("name", "Div"));       //<div id="1" name="Div"></div>
