@@ -36,4 +36,37 @@ div.style.fontSize = "26px";
 /* i.e Mouse event: click, double click etc
        Keyboard event: keypress, keyupp, keydown 
        form event: submit
-       print event and ,any more */
+       print event and ,many more */
+
+/*syntax:
+      Node.event = () =>{
+         //handle here
+      } */
+
+let btn1 = document.querySelector("#btn1");
+btn1.onclick = () =>{
+   console.log("Button was clicked");
+   let a=25;
+   a++;
+   console.log(a);                          //26
+}
+
+let div= document.querySelector("div");
+div.onmouseover = () =>{
+   console.log("You are in div now");
+}
+
+//Event obj
+btn1.onclick = (evt) =>{
+   console.log(evt);         //...mouseEvent  ...provides name of event
+   console.log(evt.type);    //...onclick
+   console.log(evt.target);  //<button id="btn1">btn1<\button>
+   console.log(evt.clientX, evt.clientY);       //36, 54    ...position
+   }
+
+//Event listeners
+/* syntax:
+       node.addEventListener(event, callback);
+       node.removeEventListener(event, callback);
+   Here, callback is nothing but the function which works as parameter who handles the event,
+   also known as event handler */
