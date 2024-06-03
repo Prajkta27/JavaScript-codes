@@ -1,8 +1,7 @@
+//asnyc await >> promise chains >> callback hell  
+//syanchronous: code will execute in the way we assign or write them (Examples till now)
 
-  //asnyc await >> promise chains >> callback hell  
-  //syanchronous: code will execute in the way we assign or write them (Examples till now)
-
-  //Asynchronous: works on setTimeout()
+//Asynchronous: works on setTimeout()
   console.log("one");
   console.log("two");
   setTimeout(() =>{
@@ -11,8 +10,8 @@
   console.log("three");
   console.log("four");       //this will print one, two three four at start & hello after 4 sec (4 sec = 4000 ms)
 
-  //callback: a functiom is passes as an argumnet of another function
-  //nested callbacks
+//callback: a functiom is passes as an argumnet of another function
+//nested callbacks
   function getData(getID, getNextData) {
     setTimeout(() => {
         console.log("Data:", getID);
