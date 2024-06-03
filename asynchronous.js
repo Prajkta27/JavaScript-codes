@@ -23,6 +23,8 @@
   }
 //below nested callback is used to get every data after 2 sec, if we pass the argument in same function, all will execute at same time
 //this is called callback hell
+/*callback hell is nothing but nexted callbacks stacked below one another forming a pyramid structure.
+This style of programming becomes difficult to understand and manage*/
   getData(1, () => {
     getData(2, () => {
         getData(3);
